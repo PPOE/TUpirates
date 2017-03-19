@@ -67,6 +67,7 @@ body {
     white-space: nowrap;
     list-style: none;
     margin: 5px;
+    overflow: hidden;
 }
 
 .person img {
@@ -78,32 +79,40 @@ body {
 
 .person .name {
     font-family: 'PoliticsHeadBold';
+    color: black;
     background: #ffcc04;
-    padding: 3px 12px;
+    padding: 3px 12px 3px 22px;
     position: absolute;
     bottom: 50px;
-    left: 0;
+    left: -10px;
     font-size: 1.6em;
+    transform: rotateZ(-2deg);
 }
 
 .person .name.name-right {
+    padding: 3px 22px 3px 12px;
     left: auto;
-    right: 0;
+    right: -10px;
+    transform: rotateZ(2deg);
 }
 
 .person .study {
     font-weight: bold;
+    color: black;
     background: #ffcc04;
-    padding: 3px 12px;
+    padding: 3px 12px 3px 22px;
     position: absolute;
     bottom: 22px;
-    left: 0;
+    left: -10px;
     font-size: 1em;
+    transform: rotateZ(-2deg);
 }
 
 .person .study.study-right {
+    padding: 3px 22px 3px 12px;
     left: auto;
-    right: 0;
+    right: -10px;
+    transform: rotateZ(2deg);
 }
 
 .posters {
@@ -116,6 +125,7 @@ body {
     white-space: nowrap;
     list-style: none;
     margin: 5px;
+    overflow: hidden;
 }
 
 .poster img {
