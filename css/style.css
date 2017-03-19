@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'PoliticsHeadBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('☺'), local('PoliticsHeadBold'), url('../fonts/PoliticsHeadBold.woff') format('woff');
+}
+
+a {
+    font-weight: bold;
+}
+
+.pirate-highlight {
+    font-family: 'PoliticsHeadBold', 'DejaWeb', 'Helvetica Neue', 'Arial', Sans-Serif;
+    color: #000000;
+    border: 6px solid #ffffff;
+    background: linear-gradient(to top,  #ffcc04 0%, #f39200 100%);
+    box-shadow: 2px 4px 6px;
+    display: inline-block;
+    padding: 3px 12px;
+    line-height: 53px;
+    margin: 15px;
+    transform: rotate(-1deg);
+}
+
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+}
+
+body {
+    background-color: #523671;
+    background: radial-gradient(#65497f 0%, #472b69 100%);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+}
+
+.content {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 500px;
+}
+
+.background {
+    background-color: #523671;
+    background: radial-gradient(#65497f 0%, #472b69 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.people {
+
+}
+
+.person {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    list-style: none;
+    margin: 5px;
+}
+
+.person img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    box-shadow: 2px 4px 6px;
+}
+
+.person .name {
+    font-family: 'PoliticsHeadBold';
+    background: #ffcc04;
+    padding: 3px 12px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    font-size: 1.6em;
+}
+
+.person .name.name-right {
+    left: auto;
+    right: 0;
+}
+
+.person .study {
+    font-weight: bold;
+    background: #ffcc04;
+    padding: 3px 12px;
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    font-size: 1em;
+}
+
+.person .study.study-right {
+    left: auto;
+    right: 0;
+}
+
+.posters {
+
+}
+
+.poster {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    list-style: none;
+    margin: 5px;
+}
+
+.poster img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    box-shadow: 2px 4px 6px;
+}
+
+body > footer {
+    font-family: 'Helvetica Neue', 'Arial', Sans-Serif;
+    color: #666666;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+body > footer a {
+    color: #666666;
+}
+
+.share-btn {
+    display: inline-block;
+    color: #ffffff !important;
+    border: none;
+    padding: 0.2em;
+    width: 2em;
+    outline: none;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.share-btn:hover {
+    position: relative;
+    top: 2px;
+    color: #eeeeee;
+}
+
+.share-btn.facebook {
+    background: #3B5998;
+}
+
+.share-btn.twitter {
+    background: #55acee;
+}
+
+.share-btn.google-plus {
+    background: #dd4b39;
+}
+
+.share-btn.facebook-messenger {
+    display: none;
+    background: #0084ff;
+}
+
+.share-btn.whatsapp {
+    display: none;
+    background: #25d366;
+}
+
+.share-btn.telegram {
+    background: #0088cc;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (max-width: 992px) {
+    .content > footer {
+        margin-top: 40px;
+        position: relative;
+        margin-bottom: 300px;
+    }
+
+    .content > footer div {
+        text-align: center !important;
+    }
+}
