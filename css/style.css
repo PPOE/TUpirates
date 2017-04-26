@@ -69,13 +69,13 @@ body {
 }
 
 .background {
-    background-image: url('../images/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 30%;
     height: 100%;
     width: 100%;
+    background: url('../images/background.jpg') no-repeat center 30% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .people ul {
