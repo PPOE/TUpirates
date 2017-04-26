@@ -7,6 +7,16 @@
 
 a {
     font-weight: bold;
+    color: #cccccc;
+}
+
+table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+td {
+    padding: 0px 10px;
 }
 
 .pirate-highlight {
@@ -20,6 +30,12 @@ a {
     line-height: 53px;
     margin: 15px;
     transform: rotate(-1deg);
+}
+
+.pirate-highlight a {
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
 }
 
 html {
@@ -36,6 +52,7 @@ body {
     overflow-y: auto;
     width: auto;
     height: auto;
+    color: #cccccc;
 }
 
 .content {
@@ -167,6 +184,23 @@ body {
     box-shadow: 2px 4px 6px;
 }
 
+.program p {
+    text-align: left;
+}
+
+.text-box {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border: #65497f 10px solid;
+    color: #373a3c;
+}
+
+.text-box a {
+    color: #373a3c;
+}
+
 body > footer {
     font-family: 'Helvetica Neue', 'Arial', Sans-Serif;
     color: #cccccc;
@@ -228,6 +262,10 @@ body > footer a {
 
     .content {
         margin-bottom: 100px;
+    }
+
+    .text-box {
+        width: 100%;
     }
 
     body > footer {
