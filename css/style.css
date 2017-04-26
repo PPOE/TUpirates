@@ -102,6 +102,21 @@ body {
     border-bottom-width: 60px;
 }
 
+.person .share-bar {
+    position: absolute;
+    right: 26px;
+    top: 66px;
+    list-style: none;
+}
+
+.person .share-bar li {
+    margin-bottom: 10px;
+}
+
+.person .share-btn.facebook-messenger {
+    display: inline-block;
+}
+
 .person .name {
     font-family: 'PoliticsHeadBold';
     color: black;
