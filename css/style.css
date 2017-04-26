@@ -71,10 +71,11 @@ body {
 .background {
     background-image: url('../images/background.jpg');
     background-attachment: fixed;
-    background-size: 300%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%;
+    height: 100%;
+    width: 100%;
 }
 
 .people ul {
