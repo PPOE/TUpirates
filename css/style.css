@@ -31,9 +31,6 @@ html {
 }
 
 body {
-    background-color: #523671;
-    background: radial-gradient(#65497f 0%, #472b69 100%);
-    background-repeat: no-repeat;
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
@@ -43,18 +40,17 @@ body {
 
 .content {
     height: 100%;
-    overflow: hidden;
     text-align: center;
     padding: 0;
     margin-bottom: 500px;
 }
 
 .background {
-    background-color: #523671;
-    background: radial-gradient(#65497f 0%, #472b69 100%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url('../images/background.jpg');
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
 }
 
 .people {
@@ -67,52 +63,60 @@ body {
     white-space: nowrap;
     list-style: none;
     margin: 5px;
+}
+
+.person > div {
+    position: relative;
     overflow: hidden;
 }
 
+.person .alternative {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    opacity: 0;
+    transition: transform 0.8s, opacity 0.4s;
+}
+
+
+.person:hover .alternative {
+    transform: rotate(3deg);
+    opacity: 1;
+}
+
 .person img {
-    height: 400px;
+    height: 370px;
     width: 300px;
     object-fit: cover;
+    object-position: 15% 20%;
     box-shadow: 2px 4px 6px;
+    border: white 20px solid;
+    border-bottom-width: 60px;
 }
 
 .person .name {
     font-family: 'PoliticsHeadBold';
     color: black;
     background: #ffcc04;
-    padding: 3px 12px 3px 22px;
+    padding: 3px 12px 3px 12px;
     position: absolute;
-    bottom: 50px;
-    left: -10px;
+    bottom: 15px;
+    left: 15px;
     font-size: 1.6em;
     transform: rotateZ(-2deg);
-}
-
-.person .name.name-right {
-    padding: 3px 22px 3px 12px;
-    left: auto;
-    right: -10px;
-    transform: rotateZ(2deg);
 }
 
 .person .study {
     font-weight: bold;
     color: black;
     background: #ffcc04;
-    padding: 3px 12px 3px 22px;
+    padding: 3px 12px 3px 12px;
     position: absolute;
-    bottom: 22px;
-    left: -10px;
+    bottom: -5px;
+    left: 36px;
     font-size: 1em;
     transform: rotateZ(-2deg);
-}
-
-.person .study.study-right {
-    padding: 3px 22px 3px 12px;
-    left: auto;
-    right: -10px;
-    transform: rotateZ(2deg);
 }
 
 .posters {
@@ -137,7 +141,7 @@ body {
 
 body > footer {
     font-family: 'Helvetica Neue', 'Arial', Sans-Serif;
-    color: #666666;
+    color: #cccccc;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -145,7 +149,7 @@ body > footer {
 }
 
 body > footer a {
-    color: #666666;
+    color: #cccccc;
 }
 
 .share-btn {
@@ -193,13 +197,18 @@ body > footer a {
 
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 992px) {
-    .content > footer {
-        margin-top: 40px;
-        position: relative;
-        margin-bottom: 300px;
+
+    .content {
+        margin-bottom: 100px;
     }
 
-    .content > footer div {
+    body > footer {
+        margin-top: 40px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    body > footer div {
         text-align: center !important;
     }
 }
