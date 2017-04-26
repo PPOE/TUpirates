@@ -17,8 +17,7 @@
       'fadeDuration': 300,
       'imageFadeDuration': 300,
       'resizeDuration': 200
-    })
-
+    });
 
   });
 

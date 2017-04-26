@@ -96,6 +96,7 @@ body {
     width: 300px;
     object-fit: cover;
     object-position: 15% 20%;
+    color: #000000;
     box-shadow: 2px 4px 6px;
     border: white 20px solid;
     border-bottom-width: 60px;
@@ -147,6 +148,7 @@ body {
     height: 400px;
     width: 300px;
     object-fit: cover;
+    color: #000000;
     box-shadow: 2px 4px 6px;
 }
 
