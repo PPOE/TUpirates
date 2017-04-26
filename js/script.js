@@ -9,6 +9,17 @@
 
     // todo
 
+    /*$('.poster a').on('click', function (event) {
+      event.preventDefault();
+    });*/
+
+    lightbox.option({
+      'fadeDuration': 300,
+      'imageFadeDuration': 300,
+      'resizeDuration': 200
+    })
+
+
   });
 
 })(jQuery);

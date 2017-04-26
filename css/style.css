@@ -138,6 +138,11 @@ body {
     overflow: hidden;
 }
 
+.poster:hover {
+    transform: rotate(2deg);
+    transition: transform 0.2s;
+}
+
 .poster img {
     height: 400px;
     width: 300px;
