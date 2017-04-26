@@ -71,13 +71,18 @@ body {
 .background {
     background-image: url('../images/background.jpg');
     background-attachment: fixed;
+    background-size: 300%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%;
 }
 
-.people {
+.people ul {
+    padding: 0;
+}
 
+.posters ul {
+    padding: 0;
 }
 
 .person {
