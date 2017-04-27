@@ -201,6 +201,7 @@ body {
     padding: 30px;
     border: #65497f 10px solid;
     color: #373a3c;
+    overflow-x: auto;
 }
 
 .text-box a {
