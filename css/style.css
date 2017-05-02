@@ -195,6 +195,10 @@ body {
     text-align: left;
 }
 
+.socialmedia .links {
+    font-size: 6em;
+}
+
 .text-box {
     width: 60%;
     margin: 0 auto;
