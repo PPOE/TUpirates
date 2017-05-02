@@ -64,9 +64,14 @@ body {
     z-index: 10;
 }
 
-.content > h1 img {
+.content > header {
     width: 500px;
     height: 107px;
+    margin: 0 auto;
+}
+
+.content > header img {
+    width: 100%;
 }
 
 .background {
@@ -126,15 +131,25 @@ body {
     border-bottom-width: 60px;
 }
 
+.share-bar {
+    display: inline-block;
+    list-style: none;
+}
+
+.share-bar li {
+    margin-bottom: 10px;
+}
+
+header .share-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .person .share-bar {
     position: absolute;
     right: 26px;
     top: 66px;
-    list-style: none;
-}
-
-.person .share-bar li {
-    margin-bottom: 10px;
 }
 
 .person .share-btn.facebook-messenger {
@@ -271,7 +286,7 @@ body > footer a {
 
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 992px) {
-    .content > h1 img {
+    .content > header {
         width: 90%;
         height: auto;
     }
