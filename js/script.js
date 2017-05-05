@@ -56,6 +56,7 @@
       memoryTries = 0;
       $firstMemoryCard = null;
       $('.memory .person').removeClass('active').removeClass('locked');
+      $('.memory ul').randomize('li.person');
     });
 
     var memoryStarted = false;
