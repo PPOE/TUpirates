@@ -234,12 +234,21 @@ header .share-bar {
     padding: 2px 8px 2px 8px;
     font-size: 1em;
     bottom: 10px;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .memory .person .study {
     padding: 2px 8px 2px 8px;
     font-size: 0.6em;
     bottom: -3px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.memory .person.locked .name,
+.memory .person.locked .study {
+    opacity: 1;
 }
 
 .posters {
