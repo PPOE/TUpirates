@@ -68,6 +68,9 @@
         memoryStarted = true;
         memoryStartTime = new Date();
       }
+      if ($firstMemoryCard === $(this) || $(this).hasClass('locked')) {
+        return;
+      }
       $(this).addClass('active');
       if ($firstMemoryCard === null) {
         $('.memory .person').removeClass('active');
@@ -76,7 +79,6 @@
         return;
       }
       memoryTries++;
-
       if ($firstMemoryCard.data('name') === $(this).data('name')) {
         $firstMemoryCard.addClass('locked');
         $(this).addClass('locked');
