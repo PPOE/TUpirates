@@ -1,6 +1,21 @@
 (function ($) {
   'use strict';
 
+  $.fn.randomize = function(childElem) {
+    return this.each(function () {
+      var $this = $(this);
+      var elems = $this.children(childElem);
+
+      elems.sort(function () { return (Math.round(Math.random()) - 0.5); });
+
+      $this.remove(childElem);
+
+      for (var i = 0; i < elems.length; i++) {
+        $this.append(elems[ i ]);
+      }
+    });
+  };
+
   $(function () {
 
     if (navigator.userAgent.match(/iPhone|iPad|Android/i)) {
@@ -31,6 +46,52 @@
       event.preventDefault();
       $(this).parent().append($twitterTimeline);
       $(this).remove();
+    });
+
+    $('.memory ul').randomize('li.person');
+
+    $('#memoryModal').on('hide.bs.modal', function () {
+      memoryStarted = false;
+      memoryStartTime = null;
+      memoryTries = 0;
+      $firstMemoryCard = null;
+      $('.memory .person').removeClass('active').removeClass('locked');
+    });
+
+    var memoryStarted = false;
+    var memoryStartTime = null;
+    var memoryTries = 0;
+    var $firstMemoryCard = null;
+    $('.memory .person').on('click', function (event) {
+      if (!memoryStarted) {
+        memoryStarted = true;
+        memoryStartTime = new Date();
+      }
+      $(this).addClass('active');
+      if ($firstMemoryCard === null) {
+        $('.memory .person').removeClass('active');
+        $(this).addClass('active');
+        $firstMemoryCard = $(this);
+        return;
+      }
+      memoryTries++;
+
+      if ($firstMemoryCard.data('name') === $(this).data('name')) {
+        $firstMemoryCard.addClass('locked');
+        $(this).addClass('locked');
+        if ($('.memory .person').length === $('.memory .person.locked').length) {
+          var timeDiff = Math.round(((new Date()) - memoryStartTime) / 1000);
+          var modalText = 'Du hast ' + timeDiff + ' Sekunden und ' + memoryTries + ' Versuche gebraucht..';
+          $('#memoryModal .modal-body p').text(modalText);
+          $('#memoryModal').modal();
+
+          $('#memoryModal .memory-fb-post').on('click', function (event) {
+            event.preventDefault();
+            $('.share-btn.facebook').get(0).click();
+          });
+        }
+      }
+      $firstMemoryCard = null;
     });
 
   });

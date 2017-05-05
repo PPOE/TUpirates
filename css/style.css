@@ -38,6 +38,10 @@ td, th {
     text-decoration: none;
 }
 
+.modal {
+    color: #292b2c;
+}
+
 html {
     min-height: 100%;
     overflow-x: hidden;
@@ -72,6 +76,17 @@ body {
 
 .content > header img {
     width: 100%;
+}
+
+.content > header .sub {
+    position: relative;
+    top: -50px;
+    right: -40%;
+    font-size: 0.6em;
+    border: 3px solid #ffffff;
+    box-shadow: 2px 4px 6px;
+    padding: 1px 5px;
+    line-height: 1.1em;
 }
 
 .background {
@@ -178,6 +193,53 @@ header .share-bar {
     left: 36px;
     font-size: 1em;
     transform: rotateZ(-2deg);
+}
+
+.memory .person .backside img {
+    object-position: 50%;
+}
+
+.memory .person > div {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.memory .person > div.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(0deg);
+}
+
+.memory .person.active > div,
+.memory .person.locked > div {
+    transform: rotateY(0deg);
+}
+
+.memory .person.active > div.backside,
+.memory .person.locked > div.backside {
+    transform: rotateY(180deg);
+}
+
+.memory .person img {
+    border: #ffffff 15px solid;
+    border-bottom-width: 40px;
+    height: 245px;
+    width: 200px;
+}
+
+.memory .person .name {
+    padding: 2px 8px 2px 8px;
+    font-size: 1em;
+    bottom: 10px;
+}
+
+.memory .person .study {
+    padding: 2px 8px 2px 8px;
+    font-size: 0.6em;
+    bottom: -3px;
 }
 
 .posters {
