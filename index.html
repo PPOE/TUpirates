@@ -1,537 +1,132 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta name="description" content="Deine piratische Vertretung auf der TU Graz.">
-        <meta name="keywords"
-              content="
-              TUpirates, TUpiraten, TUpiratenInnen, TUpirateninnen,
-              HTU Graz, Hochschülerinnen und Hochschülerschaft an der Technischen Universität Graz,
-              ÖH Graz, ÖH TU Graz, ÖH Wahl, ÖH Wahlen, 2017,
-              TU Graz, Technische Universität Graz, Graz University of Technology,
-              Piraten, PiratInnen, Pirat, Piratin, Pirates, Piratenpartei, Piratinnenpartei
-              ">
-        <meta name="author" content="Peter Grassberger, TUpiratinnnen">
+    <meta name="description" content="Deine piratische Vertretung auf der TU Graz.">
+    <meta name="keywords"
+          content="
+                TUpirates, TUpiraten, TUpiratenInnen, TUpirateninnen,
+                HTU Graz, Hochschülerinnen und Hochschülerschaft an der Technischen Universität Graz,
+                ÖH Graz, ÖH TU Graz, ÖH Wahl, ÖH Wahlen, 2017,
+                TU Graz, Technische Universität Graz, Graz University of Technology,
+                Piraten, PiratInnen, Pirat, Piratin, Pirates, Piratenpartei, Piratinnenpartei
+                ">
+    <meta name="author" content="Peter Grassberger, TUpiratinnnen">
 
-        <meta property="og:locale" content="de_DE" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://tupiratinnen.at/" />
-        <meta property="og:title" content="TUpiratinnnen" />
-        <meta property="og:description" content="Deine piratische Vertretung auf der TU Graz." />
-        <meta property="og:image" content="http://tupiratinnen.at/images/TUpiratinnen.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="800" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:site" content="@TUpiratenGraz" />
-        <meta property="twitter:creator" content="@TUpiratenGraz" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://tupiratinnen.at/" />
+    <meta property="og:title" content="TUpiratinnnen" />
+    <meta property="og:description" content="Deine piratische Vertretung auf der TU Graz." />
+    <meta property="og:image" content="http://tupiratinnen.at/images/TUpiratinnen.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@TUpiratenGraz" />
+    <meta property="twitter:creator" content="@TUpiratenGraz" />
 
-        <meta name="google-site-verification" content="sTT6agojocfB2oh6lVScQBVmnY2-uLD2-JXKrlkfwuY" />
+    <meta name="google-site-verification" content="sTT6agojocfB2oh6lVScQBVmnY2-uLD2-JXKrlkfwuY" />
 
-        <title>TUpiratinnnen</title>
+    <title>TUpiratinnnen</title>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/lightbox.min.css">
-        <link rel="stylesheet" href="css/style.css">
-
-
-        <script type="text/javascript">
-            var _paq = _paq || [];
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-                var u="//piwik.piratenpartei.at/";
-                _paq.push(['setTrackerUrl', u+'piwik.php']);
-                _paq.push(['setSiteId', '6']);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-    </head>
-    <body class="background" style="background-color: rgb(99, 106, 104)">
-        <div class="container content">
-            <header>
-                <h1>
-                    <a href="."><img src="images/xTUpiratinnen.png" alt="x TUpiratinnen"/></a>
-                </h1>
-            </header>
-
-            <article class="people clearfix">
-                <ul>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(134, 149, 141)">
-                            <img src="images/people/valentin_default.jpg" alt="Valentin Gritsch"/>
-                            <h2 class="name">Valentin Gritsch</h2>
-                            <h3 class="study">Elektrotechnik</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/valentin_default.jpg" data-lightbox="people" data-title="Valentin">
-                                <img src="images/people/valentin_fun.jpg" alt="Valentin Gritsch"/>
-                                <h2 class="name">Valentin Gritsch</h2>
-                                <h3 class="study">Elektrotechnik</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(141, 151, 153)">
-                            <img src="images/people/david_default.jpg" alt="David Schöggl"/>
-                            <h2 class="name">David Schöggl</h2>
-                            <h3 class="study">Elektrotechnik-Toningenieur</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/david_default.jpg" data-lightbox="people" data-title="David">
-                                <img src="images/people/david_fun.jpg" alt="David Schöggl"/>
-                                <h2 class="name">David Schöggl</h2>
-                                <h3 class="study">Elektrotechnik-Toningenieur</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(181, 181, 181)">
-                            <img src="images/people/carina_default.jpg" alt="Carina Mazelle"/>
-                            <h2 class="name">Carina Mazelle</h2>
-                            <h3 class="study">Architektur</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/carina_default.jpg" data-lightbox="people" data-title="Carina">
-                                <img src="images/people/carina_fun.jpg" alt="Carina Mazelle"/>
-                                <h2 class="name">Carina Mazelle</h2>
-                                <h3 class="study">Architektur</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(70, 78, 80)">
-                            <img src="images/people/stefanie_default.jpg" alt="Stefanie Skotnik"/>
-                            <h2 class="name">Stefanie Skotnik</h2>
-                            <h3 class="study">Elektrotechnik</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/stefanie_default.jpg" data-lightbox="people" data-title="Stefanie">
-                                <img src="images/people/stefanie_fun.jpg" alt="Stefanie Skotnik"/>
-                                <h2 class="name">Stefanie Skotnik</h2>
-                                <h3 class="study">Elektrotechnik</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(86, 97, 111)">
-                            <img src="images/people/peter_default.jpg" alt="Peter Grassberger"/>
-                            <h2 class="name">Peter Grassberger</h2>
-                            <h3 class="study">Softwareentwicklung-Wirtschaft</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/peter_default.jpg" data-lightbox="people" data-title="Peter">
-                                <img src="images/people/peter_fun.jpg" alt="Peter Grassberger"/>
-                                <h2 class="name">Peter Grassberger</h2>
-                                <h3 class="study">Softwareentwicklung-Wirtschaft</h3>
-                            </a>
-                            <ul class="share-bar">
-                                <li>
-                                    <a class="share-btn facebook" href="//www.facebook.com/petergrassberger" target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="share-btn facebook-messenger" href="//m.me/petergrassberger" target="_blank">
-                                        <i class="fa fa-comment"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="share-btn twitter" href="//twitter.com/PeterTheOne" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="share-btn telegram" href="//telegram.me/PeterTheOne" target="_blank">
-                                        <i class="fa fa-telegram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(51, 61, 73)">
-                            <img src="images/people/florian_default.jpg" alt="Florian Lammer"/>
-                            <h2 class="name">Florian Lammer</h2>
-                            <h3 class="study">Bauingenieurwissenschaften</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/florian_default.jpg" data-lightbox="people" data-title="Florian">
-                                <img src="images/people/florian_fun.jpg" alt="Florian Lammer"/>
-                                <h2 class="name">Florian Lammer</h2>
-                                <h3 class="study">Bauingenieurwissenschaften</h3>
-                            </a>
-                            <ul class="share-bar">
-                                <li>
-                                    <a class="share-btn facebook" href="//www.facebook.com/flo.lammer.1" target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="share-btn twitter" href="//twitter.com/eipresidente" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(77, 90, 95)">
-                            <img src="images/people/cosma_default.jpg" alt="Cosma Tieber"/>
-                            <h2 class="name">Cosma Tieber</h2>
-                            <h3 class="study">Sozialmanagement</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/cosma_default.jpg" data-lightbox="people" data-title="Cosma">
-                                <img src="images/people/cosma_fun.jpg" alt="Cosma Tieber"/>
-                                <h2 class="name">Cosma Tieber</h2>
-                                <h3 class="study">Sozialmanagement</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(78, 97, 105)">
-                            <img src="images/people/markus_default.jpg" alt="Markus Lienbacher"/>
-                            <h2 class="name">Markus Lienbacher</h2>
-                            <h3 class="study">Informatik</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/markus_default.jpg" data-lightbox="people" data-title="Markus">
-                                <img src="images/people/markus_fun.jpg" alt="Markus Lienbacher"/>
-                                <h2 class="name">Markus Lienbacher</h2>
-                                <h3 class="study">Informatik</h3>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="person">
-                        <div class="default" style="background-color: rgb(112, 114, 97)">
-                            <img src="images/people/sebastian_default.jpg" alt="Sebastian Weiland"/>
-                            <h2 class="name">Sebastian Weiland</h2>
-                            <h3 class="study">Informationsmanagement</h3>
-                        </div>
-                        <div class="alternative">
-                            <a href="images/people/sebastian_default.jpg" data-lightbox="people" data-title="Sebastian">
-                                <img src="images/people/sebastian_fun.jpg" alt="Sebastian Weiland"/>
-                                <h2 class="name">Sebastian Weiland</h2>
-                                <h3 class="study">Informationsmanagement</h3>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-
-                <p>
-                    Die TUpiratinnen sind eine neue Hochschulfraktion an der <a href="//www.tugraz.at">TU Graz</a>,
-                    mit dieser Liste kandidieren wir zur <a href="//wahl2017.oeh.ac.at/">ÖH-Wahl 2017</a>.
-                </p>
-                <a href="./memory">Zum Memory Spiel..</a>
-            </article>
-
-            <!--<article class="posters clearfix">
-                <h1 class="pirate-highlight">Themen</h1>
-                <ul>
-                    <li class="poster">
-                        <img src="images/posters/verbotszonen_temp.jpg" alt="poster verbotszonen temp">
-                    </li>
-                    <li class="poster">
-                        <img src="images/posters/verbotszonen_temp.jpg" alt="poster verbotszonen temp">
-                    </li>
-                    <li class="poster">
-                        <img src="images/posters/verbotszonen_temp.jpg" alt="poster verbotszonen temp">
-                    </li>
-                </ul>
-            </article>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
-            <article class="posters clearfix">
-                <h1 class="pirate-highlight"><a id="plakate" href="#plakate">Plakate</a></h1>
-                <ul>
-                    <li class="poster" style="background-color: rgb(70, 73, 83)">
-                        <a href="images/posters/plakat_1.jpg" data-lightbox="posters"><img src="images/posters/plakat_1.jpg" alt="plakat themen"></a>
-                    </li>
-                    <li class="poster" style="background-color: rgb(235, 166, 160)">
-                        <a href="images/posters/plakat_2.jpg" data-lightbox="posters"><img src="images/posters/plakat_2.jpg" alt="plakat rettet die wahlen"></a>
-                    </li>
-                    <li class="poster" style="background-color: rgb(234, 167, 167)">
-                        <a href="images/posters/plakat_3.jpg" data-lightbox="posters"><img src="images/posters/plakat_3.jpg" alt="plakat wir stehen zwar nicht auf der list sind aber trotzdem wichtig"></a>
-                    </li>
-                </ul>
-                <a href="//drive.google.com/open?id=1IW-59Z6VmzkyrioYN-lYtASg8yQ&usp=sharing">Alle Standorte</a>
-            </article>
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.piratenpartei.at/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '6']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+  </head>
+  <body class="background" style="background-color: rgb(99, 106, 104)">
+    <div class="container content">
+      <header>
+        <h1>
+          <a href=".."><img src="images/xTUpiratinnen.png" alt="x TUpiratinnen"/></a>
+        </h1>
+      </header>
 
-            <article class="events clearfix">
-                <h1 class="pirate-highlight"><a id="veranstaltungen" href="#veranstaltungen">Veranstaltungen</a></h1>
-                <div class="text-box">
-                    <table>
-                        <tr>
-                            <td style="white-space: nowrap;">2. Mai</td><td>9h</td><td><a href="//www.facebook.com/events/1758486820829955/" target="_blank">Yoga</a></td><td>Dachterasse, Lessingstraße 25</td>
-                        </tr>
-                        <tr>
-                            <td style="white-space: nowrap;">3. Mai</td><td>18h</td><td><a href="//www.facebook.com/events/288982431546836/" target="_blank">Themenabend: Open Access (Film und Diskussion)</a></td><td>HS P2, Petersgasse 16, EG</td>
-                        </tr>
-                        <tr>
-                            <td style="white-space: nowrap;">9. Mai</td><td>16h</td><td><a href="//www.facebook.com/events/773965252784846/" target="_blank">Waffelstand der TUPiratinnen</a></td><td>Kopernikusgasse</td>
-                        </tr>
-                        <tr>
-                            <td style="white-space: nowrap;">11. Mai</td><td>13h</td><td><a href="//www.facebook.com/events/408136526246011/" target="_blank">Yoga</a></td><td>Wiese hinter Inffeldgasse 16c</td>
-                        </tr>
-                        <tr>
-                            <td style="white-space: nowrap;">12. Mai</td><td>16h</td><td><a href="//www.facebook.com/events/1835965126668751/" target="_blank">Pirarty</a></td><td>Inffeldplatz</td>
-                        </tr>
-                        <tr>
-                            <td style="white-space: nowrap;">16. Mai</td><td>19h</td><td><a href="//www.facebook.com/events/1163302277130726/" target="_blank">Poetry Slam (Offene Liste!)</a></td><td>i12, Inffeldgasse 16</td>
-                        </tr>
-                    </table>
-                    <br />
-                    <div>
-                        Kalender:
-                        <a href="//calendar.google.com/calendar/embed?src=qcoboivpphp182sgc03o1eo6mo%40group.calendar.google.com&ctz=Europe/Vienna">HTML</a>,
-                        <a href="//calendar.google.com/calendar/ical/qcoboivpphp182sgc03o1eo6mo%40group.calendar.google.com/public/basic.ics">ICS</a>,
-                        <a href="//www.facebook.com/TUpiratenGraz/events">Facebook</a>,
-                        <a href="//online.tugraz.at/tug_online/vag.veranstaltungen?corg=37">TUG Online</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="program clearfix">
-                <h1 class="pirate-highlight"><a id="programm" href="#programm">Programm</a></h1>
-
-                <div class="text-box">
-                    <p>
-                        <strong>Feste billiger</strong><br/>
-                        Feste sind nicht nur willkommene Abwechslung vom Studienalltag, sie bringen auch Studierende zusammen. Deshalb müssen sie für alle leistbar bleiben, 3€ pro Bier ist einfach zu teuer.
-                    </p>
-                    <p>
-                        <strong>Hochwertiges, günstiges aber auch veganes Essen in der Mensa</strong><br/>
-                        Die Mensa ist eine praktische Einrichtung für Studierende. Um die Mensa aber wirklich zu einer täglichen Option zu machen braucht es günstigere Mittagsmenüs und natürlich auch vegane Optionen am Speiseteller.
-                    </p>
-                    <p>
-                        <strong>Bessere Öffi-Verbindung zwischen KFU und TU</strong><br/>
-                        Gerade für NAWI Studierende braucht es eine ordentliche Öffi-Verbindung zwischen der TU und der KFU. Zu einer generell verbesserten Erreichbarkeit der Universitätsstandorte gehören aber auch Fahrrad-Highways und Bikesharing-Systeme.
-                    </p>
-                    <p>
-                        <strong>Makerspace ausbauen</strong><br/>
-                        Für Studierende ist es wichtig selbstbestimmt an (studienübergreifenden) Projekten arbeiten. Darum setzen wir uns für einen kontinuierlichen Ausbau des E-Lab, FabLab und Phi-Lab ein.
-                    </p>
-                    <p>
-                        <strong>Lernplätze ausbauen</strong><br/>
-                        Studierende brauchen auch außerhalb der Hörsäle Platz um zu lernen und zu arbeiten. Darum setzen wir uns für einen Ausbau der Lernplätze auf allen Standorten der TU ein. Das Lernzentrum Inffeldgasse ist hierfür ein positives Beispiel.
-                    </p>
-                    <p>
-                        <strong>Keine Studiengebühren</strong><br/>
-                        Auf der einen Seite sollte Bildung keine Frage von Wohlstand sein. Auf der anderen Seite sollen Studierende außerhalb der Mindestzeit nicht durch Studiengebühren für ihr außeruniversitäres Engagement bestraft werden.
-                    </p>
-                    <p>
-                        <strong>Zugangsbeschränkungen abschaffen</strong><br/>
-                        Wir sehen es positiv und als Gewinn für die Gesellschaft, wenn viele Menschen studieren. Im Sinne einer Wissensgesellschaft soll die TU Graz dem auch nicht entgegenwirken. Zugangsbeschränkungen (z.B. Architektur, Ton Ing., Mol. Bio, ...) lehnen wir daher ab.
-                    </p>
-                    <p>
-                        <strong>Studieneingangs- und Orientierungsphase</strong><br/>
-                        Wir glauben, dass Studierende selbst am besten wissen was gut für sie ist und sie interessiert. Darum lehnen wir künstliche Studieneingangs- und Orientierungsphasen ab. Stattdessen fordern wir mehr Wahlfreiheiten im Bachelor um das Studium besser den eigenen Interessen anpassen zu können.
-                    </p>
-                    <p>
-                        <strong>Mehr Video-Vorlesungen und digitale Lernmittel</strong><br/>
-                        Wir setzen uns für selbstbestimmtes lernen und die verstärkte Nutzung von E-Learning und digitaler Lernmittel ein. Die Infrastrukur für Streams und Aufzeichnung von Vorlesungen soll auf mehr Hörsäle ausgeweitet werden und Vortragende zur Nutzung dieser Möglichkeiten aktiv angeregt werden (siehe: https://tube.tugraz.at/ )
-                    </p>
-                    <p>
-                        <strong>Mehr berufsbegleitende Studiengänge (auch Bachelor)</strong><br/>
-                        Lernen  ist ein lebenslanger Prozess und studieren soll jederzeit möglich sein.  Dazu braucht es flexiblere Studienpläne und Angebote für Berufstätige. Video-Vorlesungen können diesen Prozess positiv unterstützen.
-                    </p>
-                    <p>
-                        <strong>Free Open Source Software für den Lehrbetrieb</strong><br/>
-                        Wir setzen uns für die vermehrte Nutzung von Open Source Software im Lehrbetrieb ein. Statt Programmen mit restriktiven Lizenzen oder teuren Gebühren soll stärker auf freie Software zurückgegriffen werden.
-                    </p>
-                    <p>
-                        <strong>Open Access fördern</strong><br/>
-                        Öffentlich finanzierte Forschung sollte frei verfügbar sein. Wir setzen uns für eine zentrale Stelle ein über die kostenlos auf öffentlich finanzierte Forschungsergbnisse zugegriffen werden kann.
-                    </p>
-                    <p>
-                        <strong>Livestream und bessere Protokolle von der UV Sitzung</strong><br/>
-                        Wir setzen uns für mehr Transparenz in der Universitätsvertretung ein. Dazu fordern wir einen Livestream der UV-Sitzungen und bessere Protokolle oder online zugängliche Audioprotokolle.
-                    </p>
-                    <p>
-                        <strong>Liquid Democracy</strong><br/>
-                        Alle Studierenden sollen auch nach der ÖH-Wahl mitbestimmen können. Dazu soll die HTU mit unterschiedlichen online Beteiligungsmöglichkeiten experimentieren und Meinungsbilder von Studierenden einholen.
-                    </p>
-                    <p>
-                        <strong>Studierenden Budget</strong><br/>
-                        Studierende sollen über einen Teil des Budgets der HTU direkt abstimmen können. Ähnlich wie beim BürgerInnenbudget.at und auf der KFU sollen Studierende selbst Ideen und Projekte einbringen können und gemeinsam über die Finanzierung abstimmen.
-                    </p>
-                    <p>
-                        <strong>Investition in den Hochschulsektor</strong><br/>
-                        2% des BIP in den tertiären Bildungssektor, weil es der Gesamtgesellschaft zu gute kommt.
-                    </p>
-                    <p>
-                        <strong>Datenschutz und Datensparsamkeit</strong><br/>
-                        Wir stetzen uns in allen Bereich für einen starken Datenschutz und vorbeugende Datensparsamkeit innerhalb der HTU und an der TU Graz ein.
-                    </p>
-                </div>
-            </article>
-
-            <article class="events clearfix">
-                <h1 class="pirate-highlight"><a id="finanzen" href="#finanzen">Finanzen</a></h1>
-                <div class="text-box">
-                    <h2>Buchungen</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Datum</th><th>Geld</th><th>Art</th><th>Buchungstext</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>04.04.2017</td><td class="text-xs-right">100,00€</td><td>Einnahme</td><td>Spende: Piratenpartei Österreichs</td>
-                            </tr>
-                            <tr>
-                                <td>04.04.2017</td><td class="text-xs-right">200,00€</td><td>Einnahme</td><td>Spende: Piratenpartei Österreichs - Landesorganisation Wien</td>
-                            </tr>
-                            <tr>
-                                <td>04.04.2017</td><td class="text-xs-right">200,00€</td><td>Einnahme</td><td>Spende: Piratenpartei Österreichs - Landesorganisation Steiermark</td>
-                            </tr>
-                            <tr>
-                                <td>18.04.2017</td><td class="text-xs-right">-400,89€</td><td>Ausgabe</td><td>Plakate Druck</td>
-                            </tr>
-                            <tr>
-                                <td>28.04.2017</td><td class="text-xs-right">150,00€</td><td>Einnahme</td><td>Anonyme Privatspende</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>03.05.2017</th><th class="text-xs-right">249,11€</th><th>Summe</th><th>-</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-                <br />
-                <div class="text-box">
-                    <h2>Konto</h2>
-                    <table>
-                        <tr>
-                            <th>Inhaber</th><td>Piratenpartei Steiermark</td>
-                        </tr>
-                        <tr>
-                            <th>Stichwort</th><td>TUpiratinnen</td>
-                        </tr>
-                        <tr>
-                            <th>IBAN</th><td>AT91 2081 5000 4037 1353</td>
-                        </tr>
-                        <tr>
-                            <th>BIC</th><td>STSPAT2GXXX</td>
-                        </tr>
-                    </table>
-                </div>
-            </article>
-
-            <article class="socialmedia clearfix">
-                <h1 class="pirate-highlight"><a id="socialmedia" href="#socialmedia">Social Media</a></h1>
-                <div class="text-box row">
-                    <div class="links">
-                        <a class="share-btn facebook"
-                           href="//www.facebook.com/TUpiratenGraz/" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a class="share-btn twitter"
-                               href="//twitter.com/TUpiratenGraz"
-                               target="_blank">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </div>
-                    <br />
-                    <div>
-                        <a class="load-facebook" href="#">Facebook Timeline laden</a>
-                    </div>
-                    <div>
-                        <a class="load-twitter" href="#">Twitter Timeline laden</a>
-                    </div>
-                </div>
-            </article>
-
-
-            <!-- todo: flyer download, tuinfo text -->
-
-            <!-- todo avatar image -->
-
-
-            <!--
-
-            menschen
-             - foto, name, studiengang
-             - klick: kurztext/zitat, themen, listenplatz, socialmedia
-            programm/themen
-            plakate
-             - download
-             - klick: fullscreen, download link..
-            (UEs)
-            (Kandidieren)
-            (Telegram newsletter?)
-            (transparenz)
-            (kontakt/presse/impressum)
-
-            -->
-
-
+      <article class="program clearfix">
+        <div class="text-box">
+          <p>
+            Die TUpiratinnen treten dieses Jahr (2019) nicht selbstständig zur ÖH Wahl an der TU Graz an, wir unterstützen die <a href="http://blatt.htu.tugraz.at/">BLATT</a> bei ihrem Antritt, vor allem mit Plakatständern.
+          </p>
+          <p>
+            Die alte Webseite von 2017 gibt es noch im <a href="archive/2017">archiv</a>.
+          </p>
         </div>
+      </article>
 
-        <footer>
-            <div class="col-md-4 text-md-left">
-                <p>
-                    Teilen mit
-                    <a class="share-btn facebook"
-                       href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftupiratinnen.at" target="_blank">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a class="share-btn twitter"
-                       href="//twitter.com/home?status=.%40TUpiratenGraz%20deine%20piratische%20Vertretung%20auf%20der%20TU%20Graz%20http%3A%2F%2Ftupiratinnen.at%20%23oeh17"
-                       target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a class="share-btn google-plus" href="//plus.google.com/share?url=http%3A%2F%2Ftupiratinnen.at"
-                       target="_blank">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                    <a class="share-btn facebook-messenger"
-                       href="fb-messenger://share/?link=http%3A%2F%2Ftupiratinnen.at">
-                        <i class="fa fa-comment"></i>
-                    </a>
-                    <a class="share-btn telegram"
-                       href="//telegram.me/share/url?url=http%3A%2F%2Ftupiratinnen.at&text=Kennst%20du%20schon%20die%20TUpiratinnen%3F"
-                       target="_blank">
-                        <i class="fa fa-telegram"></i>
-                    </a>
-                    <a class="share-btn whatsapp"
-                       href="whatsapp://send?text=Kennst%20du%20schon%20die%20TUpiratinnen%3F%20http%3A%2F%2Ftupiratinnen.at"
-                       data-action="share/whatsapp/share"
-                       target="_blank">
-                        <i class="fa fa-whatsapp"></i>
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-8 text-md-right">
-                <p>
-                    <!--<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">SIL OFL 1.1</a> &copy; <a href="http://fontawesome.io/">Font Awesome</a><br/>
-                    Font: PoliticsHeadBold &copy; <a href="http://kaklotter.de/">Fred Bordfeld</a><br/>-->
-                    Fotos &copy; <a href="http://www.fotocommunity.de/photographer/markus-thomas-lienbacher/732855">Markus Thomas Lienbacher</a><br/>
+    </div>
 
-                    Verbesserungsvorschläge gerne per
-                    <a href="mailto:petertheone@piratenpartei.at">Mail</a> oder
-                    <a href="//github.com/PPOE/TUpirates">GitHub</a><br/>
+    <footer>
+      <div class="col-md-4 text-md-left">
+        <p>
+          Teilen mit
+          <a class="share-btn facebook"
+             href="//www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftupiratinnen.at" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="share-btn twitter"
+             href="//twitter.com/home?status=.%40TUpiratenGraz%20deine%20piratische%20Vertretung%20auf%20der%20TU%20Graz%20http%3A%2F%2Ftupiratinnen.at%20%23oeh17"
+             target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="share-btn google-plus" href="//plus.google.com/share?url=http%3A%2F%2Ftupiratinnen.at"
+             target="_blank">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a class="share-btn facebook-messenger"
+             href="fb-messenger://share/?link=http%3A%2F%2Ftupiratinnen.at">
+            <i class="fa fa-comment"></i>
+          </a>
+          <a class="share-btn telegram"
+             href="//telegram.me/share/url?url=http%3A%2F%2Ftupiratinnen.at&text=Kennst%20du%20schon%20die%20TUpiratinnen%3F"
+             target="_blank">
+            <i class="fa fa-telegram"></i>
+          </a>
+          <a class="share-btn whatsapp"
+             href="whatsapp://send?text=Kennst%20du%20schon%20die%20TUpiratinnen%3F%20http%3A%2F%2Ftupiratinnen.at"
+             data-action="share/whatsapp/share"
+             target="_blank">
+            <i class="fa fa-whatsapp"></i>
+          </a>
+        </p>
+      </div>
+      <div class="col-md-8 text-md-right">
+        <p>
+          <!--<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">SIL OFL 1.1</a> &copy; <a href="http://fontawesome.io/">Font Awesome</a><br/>
+          Font: PoliticsHeadBold &copy; <a href="http://kaklotter.de/">Fred Bordfeld</a><br/>-->
+          Fotos &copy; <a href="http://www.fotocommunity.de/photographer/markus-thomas-lienbacher/732855">Markus Thomas Lienbacher</a><br/>
 
-                    <a href="//creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
-                    &copy;
-                    <a href="//piraten-graz.at/rechtliches/impressum/">TUpiratinnnen</a> 2017 -
-                    <a href="//www.facebook.com/TUpiratenGraz/">Facebook</a> -
-                    <a href="//twitter.com/TUpiratenGraz">Twitter</a>
-                </p>
-            </div>
-        </footer>
+          Verbesserungsvorschläge gerne per
+          <a href="mailto:petertheone@piratenpartei.at">Mail</a> oder
+          <a href="//github.com/PPOE/TUpirates">GitHub</a><br/>
 
-        <script src="js/jquery-3.2.0.min.js"></script>
-        <script src="js/tether.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+          <a href="//creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+          &copy;
+          <a href="//piraten-graz.at/rechtliches/impressum/">TUpiratinnnen</a> 2017-2019 -
+          <a href="//www.facebook.com/TUpiratenGraz/">Facebook</a> -
+          <a href="//twitter.com/TUpiratenGraz">Twitter</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
